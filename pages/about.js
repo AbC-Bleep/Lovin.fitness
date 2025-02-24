@@ -1,8 +1,11 @@
-export default function About() {
-  return ( import Navbar from "../components/Navbar";
+import Navbar from "../components/Navbar";
+
+export default function Pricing() {
+  return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>About Lovin Fitness</h1>
-      <p>Lovin Fitness helps women of all ages achieve their fitness goals with personalized workout plans.</p>
-   </div>
+      <Navbar />
+      <h1>Pricing</h1>
+      <p>Explore our affordable and flexible pricing plans tailored to your fitness needs.</p>
+    </div>
   );
 }
