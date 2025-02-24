@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/link"; 
 
 export default function Navbar() {
   return (
@@ -11,23 +11,17 @@ export default function Navbar() {
       justifyContent: "center", 
       flexWrap: "wrap"
     }}>
-      <Link href="/" passHref>
-        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>🏠 Home</a>
+      <Link href="/about">
+        <span style={{ textDecoration: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}>💖 About</span>
       </Link>
-      <Link href="/about" passHref>
-        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>💖 About</a>
+      <Link href="/workouts">
+        <span style={{ textDecoration: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}>🔥 Workouts</span>
       </Link>
-      <Link href="/workouts" passHref>
-        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>🔥 Workouts</a>
+      <Link href="/pricing">
+        <span style={{ textDecoration: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}>💰 Pricing</span>
       </Link>
-      <Link href="/pricing" passHref>
-        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>💰 Pricing</a>
-      </Link>
-      <Link href="/community" passHref>
-        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>👥 Community</a>
-      </Link>
-      <Link href="/contact" passHref>
-        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>📩 Contact</a>
+      <Link href="/contact">
+        <span style={{ textDecoration: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}>📩 Contact</span>
       </Link>
     </nav>
   );
