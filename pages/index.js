@@ -12,5 +12,14 @@ export default function Home() {
       <p>Building Stronger Women - Your personalized workout journey starts here!</p>
       <WorkoutPlans />
     </div>
+import Navbar from "../components/Navbar";
+
+export default function Home() {
+  return (
+    <div>
+      <Navbar />
+      <h1>Welcome to Lovin Fitness</h1>
+      <p>Building Stronger Women - Your personalized workout journey starts here!</p>
+    </div>
   );
 }
