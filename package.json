@@ -11,9 +11,10 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "@components/ui/button": "latest",
-    "@components/ui/input": "latest",
-    "@components/ui/textarea": "latest",
-    "framer-motion": "latest"
+    "framer-motion": "^10.16.1",
+    "@paypal/react-paypal-js": "^7.6.0"
+  },
+  "devDependencies": {
+    "eslint": "latest"
   }
 }
