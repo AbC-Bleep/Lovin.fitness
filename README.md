@@ -14,4 +14,4 @@ Welcome to **Lovin Fitness**, your destination for personalized workout plans!
 ## 📩 Contact:
 - 📧 Email: dlovinfitness@gmail.com
 - 📸 Instagram: lovin.fitness 
-Last Updated: 2025-02-23
+- 📸 Facebook: lovin.fitness 
