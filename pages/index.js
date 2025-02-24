@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import WorkoutPlans from '../components/WorkoutPlans';
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       </Head>
       <h1>Welcome to Lovin Fitness</h1>
       <p>Building Stronger Women - Your personalized workout journey starts here!</p>
+      <WorkoutPlans />
     </div>
   );
 }
