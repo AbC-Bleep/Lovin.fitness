@@ -1,7 +1,27 @@
+import React from 'react';
 import Navbar from "../components/Navbar";
 import Link from "next/link";
 
-export default function Workouts() {
+const WorkoutProgram = ({ title, description, features, backgroundColor, borderColor }) => {
+  return (
+    <div style={{ border: `2px solid ${borderColor}`, padding: "20px", borderRadius: "10px", maxWidth: "300px", backgroundColor }}>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <ul style={{ listStyle: "none", padding: 0 }}>
+        {features.map((feature, index) => (
+          <li key={index}>{feature}</li>
+        ))}
+      </ul>
+      <Link href="/pricing" passHref>
+        <a style={{ display: "block", marginTop: "10px", background: borderColor, color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
+          Get Started
+        </a>
+      </Link>
+    </div>
+  );
+};
+
+const Workouts = () => {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
       <Navbar />
@@ -13,52 +33,43 @@ export default function Workouts() {
       <div style={{ display: "flex", justifyContent: "center", gap: "20px", marginTop: "30px", flexWrap: "wrap" }}>
         
         {/* 🏋️‍♀️ Strength Training */}
-        <div style={{ border: "2px solid #ff4a6e", padding: "20px", borderRadius: "10px", maxWidth: "300px", backgroundColor: "#fff3f8" }}>
-          <h2>🏋️‍♀️ Strength Training</h2>
-          <p>Build muscle, boost metabolism, and feel stronger than ever.</p>
-          <ul style={{ listStyle: "none", padding: 0 }}>
-            <li>✅ Full-Body Strength Workouts</li>
-            <li>✅ Weight Lifting & Bodyweight Exercises</li>
-            <li>✅ Progressive Overload Techniques</li>
-          </ul>
-          <Link href="/pricing" passHref>
-            <a style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
-              Get Started
-            </a>
-          </Link>
-        </div>
+        <WorkoutProgram
+          title="🏋️‍♀️ Strength Training"
+          description="Build muscle, boost metabolism, and feel stronger than ever."
+          features={[
+            "✅ Full-Body Strength Workouts",
+            "✅ Weight Lifting & Bodyweight Exercises",
+            "✅ Progressive Overload Techniques"
+          ]}
+          backgroundColor="#fff3f8"
+          borderColor="#ff4a6e"
+        />
 
         {/* 🔥 Fat Loss & Toning */}
-        <div style={{ border: "2px solid #ff4a6e", padding: "20px", borderRadius: "10px", maxWidth: "300px", backgroundColor: "#ffe3ed" }}>
-          <h2>🔥 Fat Loss & Toning</h2>
-          <p>High-energy workouts designed to burn fat and sculpt your body.</p>
-          <ul style={{ listStyle: "none", padding: 0 }}>
-            <li>✅ HIIT & Cardio Sessions</li>
-            <li>✅ Core & Full-Body Toning</li>
-            <li>✅ Workouts for All Fitness Levels</li>
-          </ul>
-          <Link href="/pricing" passHref>
-            <a style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
-              Get Started
-            </a>
-          </Link>
-        </div>
+        <WorkoutProgram
+          title="🔥 Fat Loss & Toning"
+          description="High-energy workouts designed to burn fat and sculpt your body."
+          features={[
+            "✅ HIIT & Cardio Sessions",
+            "✅ Core & Full-Body Toning",
+            "✅ Workouts for All Fitness Levels"
+          ]}
+          backgroundColor="#ffe3ed"
+          borderColor="#ff4a6e"
+        />
 
         {/* 🏠 Home Workouts */}
-        <div style={{ border: "2px solid #ff4a6e", padding: "20px", borderRadius: "10px", maxWidth: "300px", backgroundColor: "#ffd3e0" }}>
-          <h2>🏠 Home Workouts</h2>
-          <p>Stay fit from the comfort of your home—no gym required!</p>
-          <ul style={{ listStyle: "none", padding: 0 }}>
-            <li>✅ Equipment-Free & Minimal Equipment Options</li>
-            <li>✅ Short & Effective Workouts</li>
-            <li>✅ Customizable to Your Space</li>
-          </ul>
-          <Link href="/pricing" passHref>
-            <a style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
-              Get Started
-            </a>
-          </Link>
-        </div>
+        <WorkoutProgram
+          title="🏠 Home Workouts"
+          description="Stay fit from the comfort of your home—no gym required!"
+          features={[
+            "✅ Equipment-Free & Minimal Equipment Options",
+            "✅ Short & Effective Workouts",
+            "✅ Customizable to Your Space"
+          ]}
+          backgroundColor="#ffd3e0"
+          borderColor="#ff4a6e"
+        />
 
       </div>
 
@@ -67,4 +78,6 @@ export default function Workouts() {
       </p>
     </div>
   );
-}
+};
+
+export default Workouts;
