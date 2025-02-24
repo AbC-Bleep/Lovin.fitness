@@ -8,7 +8,7 @@ export default function About() {
       
       <p style={{ maxWidth: "600px", margin: "auto", fontSize: "18px", lineHeight: "1.6" }}>
         Hi, I’m <strong>Denisa Lovin</strong>, the heart and soul behind <strong>Lovin Fitness!</strong> 💕  
-        Fitness isn’t just what I do—it’s who I am. My passion for movement, strength, and empowerment started in high school when I realized how much I loved fitness.  
+        Fitness isn’t just what I do—it’s who I am. My passion for movement, strength, and empowerment started in middle school when I realized how much I loved fitness.  
       </p>
 
       <h2 style={{ marginTop: "30px", color: "#ff4a6e" }}>💖 My Mission</h2>
