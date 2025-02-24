@@ -11,17 +11,17 @@ export default function Navbar() {
       justifyContent: "center", 
       flexWrap: "wrap"
     }}>
-      <Link href="/about">
-        <span style={{ textDecoration: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}>💖 About</span>
+      <Link href="/about" legacyBehavior>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>💖 About</a>
       </Link>
-      <Link href="/workouts">
-        <span style={{ textDecoration: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}>🔥 Workouts</span>
+      <Link href="/workouts" legacyBehavior>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>🔥 Workouts</a>
       </Link>
-      <Link href="/pricing">
-        <span style={{ textDecoration: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}>💰 Pricing</span>
+      <Link href="/pricing" legacyBehavior>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>💰 Pricing</a>
       </Link>
-      <Link href="/contact">
-        <span style={{ textDecoration: "none", color: "white", fontWeight: "bold", cursor: "pointer" }}>📩 Contact</span>
+      <Link href="/contact" legacyBehavior>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>📩 Contact</a>
       </Link>
     </nav>
   );
