@@ -1,4 +1,5 @@
 import Navbar from "../components/Navbar";
+import Link from "next/link";
 
 export default function Workouts() {
   return (
@@ -20,9 +21,11 @@ export default function Workouts() {
             <li>✅ Weight Lifting & Bodyweight Exercises</li>
             <li>✅ Progressive Overload Techniques</li>
           </ul>
-          <a href="/pricing" style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
-            Get Started
-          </a>
+          <Link href="/pricing" passHref>
+            <a style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
+              Get Started
+            </a>
+          </Link>
         </div>
 
         {/* 🔥 Fat Loss & Toning */}
@@ -34,9 +37,11 @@ export default function Workouts() {
             <li>✅ Core & Full-Body Toning</li>
             <li>✅ Workouts for All Fitness Levels</li>
           </ul>
-          <a href="/pricing" style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
-            Get Started
-          </a>
+          <Link href="/pricing" passHref>
+            <a style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
+              Get Started
+            </a>
+          </Link>
         </div>
 
         {/* 🏠 Home Workouts */}
@@ -48,9 +53,11 @@ export default function Workouts() {
             <li>✅ Short & Effective Workouts</li>
             <li>✅ Customizable to Your Space</li>
           </ul>
-          <a href="/pricing" style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
-            Get Started
-          </a>
+          <Link href="/pricing" passHref>
+            <a style={{ display: "block", marginTop: "10px", background: "#ff4a6e", color: "white", padding: "10px", borderRadius: "5px", textDecoration: "none" }}>
+              Get Started
+            </a>
+          </Link>
         </div>
 
       </div>
