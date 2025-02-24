@@ -11,12 +11,24 @@ export default function Navbar() {
       justifyContent: "center", 
       flexWrap: "wrap"
     }}>
-      <Link href="/" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>🏠 Home</Link>
-      <Link href="/about" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>💖 About</Link>
-      <Link href="/workouts" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>🔥 Workouts</Link>
-      <Link href="/pricing" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>💰 Pricing</Link>
-      <Link href="/community" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>👥 Community</Link>
-      <Link href="/contact" style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>📩 Contact</Link>
+      <Link href="/" passHref>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>🏠 Home</a>
+      </Link>
+      <Link href="/about" passHref>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>💖 About</a>
+      </Link>
+      <Link href="/workouts" passHref>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>🔥 Workouts</a>
+      </Link>
+      <Link href="/pricing" passHref>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>💰 Pricing</a>
+      </Link>
+      <Link href="/community" passHref>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>👥 Community</a>
+      </Link>
+      <Link href="/contact" passHref>
+        <a style={{ textDecoration: "none", color: "white", fontWeight: "bold" }}>📩 Contact</a>
+      </Link>
     </nav>
   );
 }
