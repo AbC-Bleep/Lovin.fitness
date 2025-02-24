@@ -1,12 +1,11 @@
-export default function Pricing() {
+import Navbar from "../components/Navbar";
+
+export default function About() {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
-      <h1>Pricing Plans</h1>
-      <p>We offer the best fitness plans for women!</p>
-      <ul style={{ listStyle: "none" }}>
-        <li>💪 Basic Plan - $9.99/month</li>
-        <li>🔥 Pro Plan - $19.99/month</li>
-      </ul>
+      <Navbar />
+      <h1>About Lovin Fitness</h1>
+      <p>Lovin Fitness helps women of all ages achieve their fitness goals with personalized workout plans.</p>
     </div>
   );
 }
