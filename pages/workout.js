@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
+import Navbar from "../../components/Navbar";
 import Link from "next/link";
 
 const WorkoutProgram = ({ title, description, features, backgroundColor, borderColor }) => {
