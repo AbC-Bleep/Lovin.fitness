@@ -5,4 +5,3 @@ export function Button({ children, type = "button", onClick }) {
     </button>
   );
 }
-5️⃣ components/ui/card.js
