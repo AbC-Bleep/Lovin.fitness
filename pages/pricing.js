@@ -14,7 +14,7 @@ export default function Pricing() {
         {/* 💪 Basic Plan (Previously Pro) */}
         <div style={{ border: "1px solid #ff4a6e", padding: "20px", borderRadius: "10px", maxWidth: "300px", backgroundColor: "#fff3f8" }}>
           <h2>💪 Basic Plan</h2>
-          <p><strong>$10.99 CAD/month</strong></p>
+          <p><strong>$25.00 CAD/month</strong></p>
           <ul style={{ listStyle: "none", padding: 0 }}>
             <li>✅ Personalized Weekly Workouts</li>
             <li>✅ Home & Gym Plans</li>
@@ -26,7 +26,7 @@ export default function Pricing() {
         {/* 👑 Pro Plan (Previously VIP) */}
         <div style={{ border: "1px solid #ff4a6e", padding: "20px", borderRadius: "10px", maxWidth: "300px", backgroundColor: "#ffd3e0" }}>
           <h2>👑 Pro Plan</h2>
-          <p><strong>$20.00 CAD/month</strong></p>
+          <p><strong>$35.00 CAD/month</strong></p>
           <ul style={{ listStyle: "none", padding: 0 }}>
             <li>✅ Everything in Basic Plan</li>
             <li>✅ 1-on-1 Virtual Coaching</li>
